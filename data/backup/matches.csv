@@ -1,0 +1,4 @@
+id,startDateTime,homeTeam,awayTeam,homeAbbrev,awayAbbrev,homeScore,awayScore,matchStatus,currentQuarter,homeLogo,awayLogo
+105372,2026-06-22T18:00:00Z,Barça,Valencia Basket,BAR,VBC,80,88,FINALIZED,4,https://static.acb.com/img/www/clubes2024/2324BarcaLogoweb.png,https://static.acb.com/img/23/2/25/1654748673.png
+105373,2026-06-24T18:00:00Z,Barça,Valencia Basket,BAR,VBC,0,0,NOT_STARTED,1,https://static.acb.com/img/www/clubes2024/2324BarcaLogoweb.png,https://static.acb.com/img/23/2/25/1654748673.png
+105374,2026-06-27T18:00:00Z,Valencia Basket,Barça,VBC,BAR,0,0,NOT_STARTED,1,https://static.acb.com/img/23/2/25/1654748673.png,https://static.acb.com/img/www/clubes2024/2324BarcaLogoweb.png
