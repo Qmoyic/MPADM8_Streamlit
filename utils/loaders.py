@@ -9,21 +9,22 @@ load_dotenv("ACB_TOKEN_NEW.env")
 @st.cache_data
 def load_standings():
 
-    api_key = os.getenv("ACB_TOKEN_KEY_NEW")
-
-    if api_key is None:
-        raise ValueError("No se encontró la variable de entorno 'ACB_TOKEN_KEY'.")
-
-    headers = {
-        "X-Apikey": api_key
-    }
-
-    url = (
-        "https://api2.acb.com/api/seasondata/"
-        "Competition/standings?competitionId=1&editionId=90&roundId=5917"
-    )
-
     try:
+
+        api_key = os.getenv("ACB_TOKEN_KEY_NEW")
+
+        if api_key is None:
+            raise ValueError("No se encontró la variable de entorno 'ACB_TOKEN_KEY_NEW'.")
+
+        headers = {
+            "X-Apikey": api_key
+        }
+
+        url = (
+            "https://api2.acb.com/api/seasondata/"
+            "Competition/standings?competitionId=1&editionId=90&roundId=5917"
+        )
+
 
         r = requests.get(url, headers=headers, timeout=10)
         r.raise_for_status()
@@ -52,21 +53,21 @@ def load_standings():
 @st.cache_data
 def load_matches():
 
-    api_key = os.getenv("ACB_TOKEN_KEY_NEW")
-
-    if api_key is None:
-        raise ValueError("No se encontró la variable de entorno.")
-
-    headers = {
-        "X-Apikey": api_key
-    }
-
-    url = (
-        "https://api2.acb.com/api/seasondata/"
-        "Competition/matches?competitionId=1&isRoundSelected=false"
-    )
-
     try:
+
+        api_key = os.getenv("ACB_TOKEN_KEY_NEW")
+
+        if api_key is None:
+            raise ValueError("No se encontró la variable de entorno 'ACB_TOKEN_KEY_NEW'.")
+
+        headers = {
+            "X-Apikey": api_key
+        }
+
+        url = (
+            "https://api2.acb.com/api/seasondata/"
+            "Competition/matches?competitionId=1&isRoundSelected=false"
+        )
 
         r = requests.get(url, headers=headers, timeout=10)
         r.raise_for_status()
